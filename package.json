@@ -1,0 +1,22 @@
+{
+  "name": "MyReactNativeApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "clean": "cd android && ./gradlew clean",
+    "open": "open android/app/build/outputs/apk/release/",
+    "build": "cd android && ./gradlew assembleRelease && open ./app/build/outputs/apk/",
+    "aab": "cd android && ./gradlew bundleRelease && open ./app/build/outputs/bundle/release/",
+    "direcAPKinstall": "cd android && ./gradlew clean && ./gradlew installRelease",
+    "reset": "react-native start --reset-cache"
+  },
+  "dependencies": {
+    "@react-navigation/stack": "^6.3.29",
+    "react": "18.2.0",
+    "react-native": "0.72"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
